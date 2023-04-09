@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: #000942;
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+
+    background-image: url(photos/karine-germain-iIWCjgK3704-unsplash.jpg);
+    background-size: 38%;
+    background-repeat: no-repeat;
+    background-position: 92% 100%;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px;
+    border-bottom: 1px solid #bababa;
+}
+.top-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.top-nav button{
+    background: #e91e63;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.side-nav{
+    position: fixed;
+    background: #e91e63;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
+    background-size: 100% 500%;
+    background-position: 0 40%;
+}
+.side-nav img{
+    width: 120px;
+}
+.side-nav:hover{
+    animation: backcolor 20s linear infinite reverse;
+}
+@keyframes backcolor{
+    0%{
+        background-position: 0 0%;
+
+    }
+    100%{
+        background-position: 0 400%;
+
+    }  
+}
+.side-nav .logo{
+    width: 120px;
+    cursor: pointer;
+    margin-top: -60%;
+    margin-left: 10%;
+}
+.side-nav a{
+    text-decoration: none;
+    color: #fff;
+    transform: rotate(-90deg) translateX(50%);
+    width: max-content;
+}
+.text-box{
+    margin-top: 20%;
+    font-size: 86px;
+    color: #fff;
+}
+.text-box h1{
+    font-weight: 500;
+    font-size: 20px;
+    max-width: 550px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: -20%;
+    margin-left: 13%;   
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.btn{
+    cursor: pointer;
+     color: #cc0052;
+     font-size: 18px;
+     letter-spacing: 2px;
+     padding: 10px 30px;
+     border: 2px solid #fff;
+     background: transparent;
+     text-decoration: none;
+     text-align: center;
+     font-weight: bold;
+ }
+ .btn:hover{
+     border: 1px solid #f44336;
+     background: #f44336;
+     transition: 1s; 
+ }
+ .btn a{
+      color: #fff;
+     text-decoration: none;
+     font-size: 13px;
+ }
+ .btn a:visited{
+     background-color: #fff;
+ }
+ .btn a:link{
+    text-decoration: none; 
+ }
+ .text-box .icon{
+    background: #e91e63;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+ }
+.text-box .icon img{
+    width: 15px;
+}
+
+@media screen and (max-width: 600px){
+    .text-box p{
+        font-size: 50px;
+        line-height: 50px;
+        margin-left: 15px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .side-nav{
+        width: 100%;
+        height: 30px;
+        top: auto;
+        bottom: 0;
+    }
+    .side-nav .logo{
+        margin-left: 70%;
+        margin-top: -15%;
+        width: 80px;
+    }
+    .side-nav a{
+        text-decoration: none;
+        color: #fff;
+        transform: rotate(360deg) translateX(100%);
+        width: max-content;
+        margin-top: -19%;
+        margin-right: 128%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .text-box h1{
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 10px;
+        margin-left: 13px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .hero-btn{
+        top: -50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

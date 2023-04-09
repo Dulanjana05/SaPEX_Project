@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(photos/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+    background-size:cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 17%;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactInfo form{
+    width: 70%;
+    padding: 40px;
+    background: #fff;
+}
+.contactInfo form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 300;
+}
+.contactInfo form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactInfo form .inputBox input,
+.contactInfo form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactInfo form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactInfo form .inputBox input:focus ~ span,
+.contactInfo form .inputBox input:valid ~ span,
+.contactInfo form .inputBox textarea:focus ~ span,
+.contactInfo form .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactInfo form .inputBox input[type="Submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transform: translate(18%,20%);
+    text-decoration: none;
+}
+.contactInfo form .inputBox input[type="Submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+} 
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        margin-right: 25%;
+    }
+    .container .contactInfo form{
+        width: 150%;
+    }
+}
+@media screen and (max-width: 600px){
+    .contactInfo form .inputBox input[type="Submit"]{
+        margin-left: -10px;
+        width: 85px;
+    }
+    .contactInfo form{
+        margin-left: -60px;
+        line-height: 23px;
+        margin-top: -55px;
+        width: 50%;
+    }
+    .container .contactInfo .box .text{
+        margin-left: -20px;
+    }
+    .contact .content h2{
+        font-size: 25px;
+    }
+    .contact .content p{
+        font-size: 10px;
+    }
+    .container .contactInfo .box h2{
+         font-size: 18px;
+         line-height: 10px;
+         margin-top: -30px;
+    }
+    .container .contactInfo .box p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
